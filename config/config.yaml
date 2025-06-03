@@ -1,0 +1,25 @@
+# CNN configuration for facial detection
+
+# Training parameters
+num_epochs: 10
+batch_size: 32
+lr: 0.0005
+
+# Model architecture
+n_filters: 12
+hidden_dim: 512
+img_height: 64
+img_width: 64
+img_channels: 3
+
+# Data paths
+data_dir: "./data"
+results_dir: "./results"
+
+# Evaluation settings
+eval_samples: 5000
+
+# VAE-specific parameters
+latent_dim: 100
+kl_weight: 0.0005
+
